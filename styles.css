@@ -1,5 +1,32 @@
-.container {
+body {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 3em;
+    background-color: green;
+    color:antiquewhite;
+}
+
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+iframe {
+    padding: 2em;
+}
+
+hr {
+    margin-top: 1.2em;
+    opacity: .4;
+}
+
+.image_container {
+    padding-top: 3em;
+}
+
+.videos {
+    font-weight: bold;
+    color: wheat;
+    font-size: 1.3em;
 }
