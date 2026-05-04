@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Tree</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #d2e6f0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        canvas { 
+            display: block; 
+        }
+        #info {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: #333;
+        }
+        .seed-control {
+            margin-top: 10px;
+            display: flex;
+            gap: 5px;
+        }
+        #seedInput {
+            width: 100px;
+            padding: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 4px 8px;
+            border: none;
+            background: #4a7c59;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3a6346;
+        }
+        h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+    <!-- Include p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <div id="info">
+        <h3>Procedural Tree</h3>
+        <p>Click canvas to regenerate a new tree.</p>
+        <div class="seed-control">
+            <input type="text" id="seedInput" placeholder="Seed" />
+            <button onclick="loadSeed()">Load Seed</button>
+        </div>
+    </div>
+</body>
+</html>
